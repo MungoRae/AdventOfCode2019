@@ -1,10 +1,11 @@
 use std::env;
 use std::fs;
 
+mod file_loader;
 mod day_two;
 mod day_three;
 mod day_four;
-mod file_loader;
+mod day_five;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -17,6 +18,7 @@ fn main() {
         2 => day_two::run(part),
         3 => day_three::run(part),
         4 => day_four::run(part),
+        5 => day_five::run(part),
         _ => panic!("day {} not understood", day)
     }
     
