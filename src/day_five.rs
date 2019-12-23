@@ -252,10 +252,10 @@ mod tests {
 
     #[test]
     fn test_add() {
-        let mut intcode: Vec<i32> = vec![1002,4,3,4,33];
+        let mut intcode: Vec<i32> = vec![1001,4,3,4,33];
         let opcode = intcode[0];
         let mut ptr = 0;
-        let expected = vec![1002,4,3,4,36];
+        let expected = vec![1001,4,3,4,36];
 
         add(&mut intcode, &mut ptr, opcode);
 
